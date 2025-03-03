@@ -1,0 +1,37 @@
+GET http://localhost:3000/api/usuarios
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGxhY2hvQHV2Lm14IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiRGFuaWVsIE1vbmdlb3RlIFRsYWNoeSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmFkb3IiLCJleHAiOjE3NDA1NDI4MTYsImlzcyI6IlNlcnZpZG9yRmVpSldUIiwiYXVkIjoiQ2xpZW50ZXNGZWlKV1QifQ.yH3DXLDeKrVwS0E3z_1c01ICFz_FRyEBAhXEUkgRw4w
+
+###
+
+GET http://localhost:3000/api/peliculas
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGxhY2hvQHV2Lm14IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiRGFuaWVsIE1vbmdlb3RlIFRsYWNoeSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmFkb3IiLCJleHAiOjE3NDAwNzQ5NzcsImlzcyI6IlNlcnZpZG9yRmVpSldUIiwiYXVkIjoiQ2xpZW50ZXNGZWlKV1QifQ.9ALP-sqa0vHmJS95DsOGcL65pXrUWzuST80ITXz2p6k
+
+### 
+
+GET http://localhost:3000/api/categorias
+Content-Type: application/json
+//Authorization: Bearer eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoidGxhY2hvQHV2Lm14IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5uYW1lIjoiRGFuaWVsIE1vbmdlb3RlIFRsYWNoeSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkFkbWluaXN0cmFkb3IiLCJleHAiOjE3MzkzOTM0MDUsImlzcyI6IlNlcnZpZG9yRmVpSldUIiwiYXVkIjoiQ2xpZW50ZXNGZWlKV1QifQ.eLQu2acTyIwGgSXkm961j5bFZD8tedM7XE4_qN8gwQ0
+
+### 
+
+POST http://localhost:3000/api/auth 
+Content-Type: application/json
+
+{
+    "email": "tlacho@uv.mx", 
+    "password": "tlacho"
+}
+
+###
+
+POST http://localhost:3000/api/auth 
+Content-Type: application/json
+
+{
+    "email": "patito@uv.mx", 
+    "password": "patito"
+}
+
+###

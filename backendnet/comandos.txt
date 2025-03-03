@@ -1,0 +1,25 @@
+ctrl + ñ || nueva terminal
+dotnet --version || version del sdk del .net
+dotnet new web || crea plantilla de proyecto web vacio
+dotnet build || ejecuta la web app
+dotnet dev-certs https --trust || confiar en el certificado de desarrollo https local
+dotnet run || ejecutar la app
+dotnet watch run || ejecuta la app aplicando los cambios guardados del codigo fuente modificado sin reiniciar el server
+dotnet run --launch-profile https ... dotnet watch run --launch-profile https || ejecutar la app con https
+ctrl c || terminar ejecucion
+----------------------------------------------------------------------------------------------------------
+dotnet tool install --global dotnet-ef || paquete para darle el soporte de ORM a su aplicación
+dotnet add package Microsoft.EntityFrameworkCore.Design || paquete para poder hacer Migrations
+dotnet add package Pomelo.EntityFrameworkCore.MySql || paquete para utilizar MySQL con ORM 
+    NOTA: Se uso las siguientes versiones de las PackageReference:
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
+        <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
+dotnet ef database update || crear tablas e insertar los datos de inicio
+dotnet add package Swashbuckle.AspNetCore || Agregar swagger al proyecto
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore || paquete para el manejo de roles y usuarios con autenticacion
+dotnet tool update --global dotnet-ef || actualizar la linea de comandos del ORM
+dotnet ef migrations add Inicial || generar tablas en la bd ejecutando migraciones
+    NOTA: Si se desea remover la migracion, ejecutar dotnet ef migrations remove
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer || soporte para JWT
+node || entrar a la cli de node
+require("crypto").randomBytes(35).toString("hex") || generar cadena aleatoria de 35 bytes en hexa como llave privada
